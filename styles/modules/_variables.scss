@@ -1,0 +1,40 @@
+$black: #707070;
+$white: #fff;
+$blue-black: #000416;
+$blue: #1B234A;
+
+
+//letter-spacing 
+.ls-M {
+    letter-spacing: 0.9em;
+}
+.ls-S {
+    letter-spacing: 0.4em;
+}
+
+//font size
+.fs-M {
+    font-size: 10px;
+}
+.fs-S {
+    font-size: 10px;
+}
+
+@media (min-width: 480px) {
+    //letter-spacing 
+    .ls-M {
+        letter-spacing: 1em;
+    }
+    .ls-S {
+        letter-spacing: 0.4em;
+    }
+
+    // font size
+    .fs-M {
+        font-size: 12px;
+    }
+    .fs-S {
+        font-size: 12px;
+    }
+}
+
