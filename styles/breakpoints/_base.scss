@@ -40,6 +40,7 @@ html { font-size: 62.5%; }
 .grasmo {
     box-shadow: 0 8px 32px 0 rgba(40, 45, 122, 0.37);
     backdrop-filter: blur( 20px );
+    background-color: rgba($color: #fff, $alpha: 0.1);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -138,7 +139,7 @@ nav {
 .mainvisual {
     position: relative;
     &__bg {
-        background-image: url("../../image/main-visual.png");
+        background-image: url("https://github.com/17chan/aquarium/blob/master/image/main-visual.png?raw=true");
         width: 100%;
         height: 100vh;
         background-size: cover;
@@ -178,16 +179,16 @@ nav {
         transform: skewY(-45deg);
     }
 
-.info {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    &-wrapper {
-        // bottom: 100px;
+    .info {
+        position: absolute;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        bottom: 0;
+        &-wrapper {
+            // bottom: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
     }
 }
@@ -275,7 +276,6 @@ nav {
         margin: 8px 0;
     }
 }
-
 
 .arrow{
     width: 8px;
@@ -457,7 +457,7 @@ section {
                 // opacity: 0.6;
             }
             p {
-                color: $black;
+                color: $blue-black;
                 font-weight: bold;
             }
             img {
@@ -512,7 +512,7 @@ section {
                 background-color: $white;
             }
             h1 {
-                color: $black;
+                color: $blue-black;
                 font-weight: bold;
             }
             img {
@@ -555,6 +555,8 @@ section {
             }
         }
         h1 {
+            font-weight: normal;
+            font-size: 14px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -604,7 +606,17 @@ section {
             width: 148px;
             height: 50px;
             background-color: $white;
+            transition: all 0.5s cubic-bezier(0.63, 0.01, 0.46, 1);;
+            &:hover {
+                background-color: $blue-black;
+                border: 1px solid $white;
+                p {
+                    color: $white;
+                }
+                
+            }
             p {
+                transition: all 0.5s cubic-bezier(0.63, 0.01, 0.46, 1);;
                 width: max-content;
                 color: $black;
                 position: absolute;
@@ -654,6 +666,15 @@ section {
         height: 90px;
         background-color: $white;
         position: relative;
+        transition: all 0.5s cubic-bezier(0.63, 0.01, 0.46, 1);;
+        &:hover {
+            background-color: $blue-black;
+            border: 1px solid $white;
+            p {
+                transition: all 0.5s cubic-bezier(0.63, 0.01, 0.46, 1);;
+                color: $white;
+            }
+        }
         p {
             position: absolute;
             top: 50%;
@@ -661,7 +682,7 @@ section {
             transform: translate(-50%,-50%);
             width: max-content;
             color: $blue-black;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
     }
 }
@@ -743,10 +764,15 @@ footer {
     grid-template-columns: 1fr 1fr;
     div {
         background-color: $blue-black;
-        border: 1px solid $black;
-        // position: relative;
+        outline: 1px solid $black;
+        &:hover {
+            p {
+                color: $black;
+            }
+        }
     }
     p {
+        transition: all 0.5s cubic-bezier(0.63, 0.01, 0.46, 1);;
         color: $white;
         font-size: 14px;
         line-height: 64px;
