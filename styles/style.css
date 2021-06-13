@@ -456,6 +456,7 @@ section .title h2 {
 
 .swiper .btn::after {
   font-size: 2rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .news .more {
@@ -883,12 +884,12 @@ footer .content p {
       grid-template-columns: 1fr 1fr;
 }
 
-.site-link div {
+.site-link a {
   background-color: #000416;
   outline: 1px solid #707070;
 }
 
-.site-link div:hover p {
+.site-link a:hover p {
   color: #707070;
 }
 
