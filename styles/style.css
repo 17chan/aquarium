@@ -42,6 +42,10 @@ Stylesheet: ベーススタイル
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 a, a:hover {
   text-decoration: none;
   color: #fff;
@@ -452,7 +456,6 @@ section .title h2 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .swiper .btn::after {
